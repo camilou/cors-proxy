@@ -4,14 +4,16 @@
     "main": "index.js",
     "author": "Irie Aoi <eai@mizle.net>",
     "license": "MIT",
-    "devDependencies": {},
+    "devDependencies": {
+        "@types/got": "^9.6.12"
+    },
     "dependencies": {
         "@types/tough-cookie": "^4.0.0",
-        "got": "^11.5.2",
-        "tough-cookie": "^4.0.0",
-        "vercel": "^19.2.0",
+        "got": "^11.8.2",
         "isomorphic-unfetch": "^3.0.0",
         "react": "16.9.0",
-        "react-dom": "16.9.0"
+        "react-dom": "16.9.0",
+        "tough-cookie": "^4.0.0",
+        "vercel": "^19.2.0"
     }
 }
