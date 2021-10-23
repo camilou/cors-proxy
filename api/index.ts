@@ -16,7 +16,7 @@ export default async function (req: NowRequest, res: NowResponse) {
 
     try {
         const cookieJar = new CookieJar();
-        const response = await got(url, { cookieJar });
+        //const response = await got(url, { cookieJar });
 
         const response = await got(
             url,
