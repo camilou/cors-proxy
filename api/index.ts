@@ -16,18 +16,19 @@ export default async function (req: NowRequest, res: NowResponse) {
 
     try {
         const cookieJar = new CookieJar();
-        //const response = await got(url, { cookieJar });
-
-        const response = await got(
-            url,
-            {
-            method: 'get',
-            headers: {
-              'Access-Control-Allow-Origin': '*' 
-            }
-          })
-
         console.log("Got API URL: " + url);
+        const response = await got(url, { cookieJar });
+
+        // const response = await got(
+        //     url,
+        //     {
+        //     method: 'get',
+        //     headers: {
+        //       'Access-Control-Allow-Origin': '*' 
+        //     }
+        //   })
+
+        
         res.send(response.body);
         return;
     } catch (error) {
