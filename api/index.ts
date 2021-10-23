@@ -1,6 +1,7 @@
 import { NowRequest, NowResponse } from "@vercel/node";
 import { promisify } from "util";
 import got from "got";
+import fetch from "isomorphic-unfetch";
 import { CookieJar } from "tough-cookie";
 
 export default async function (req: NowRequest, res: NowResponse) {
@@ -16,7 +17,7 @@ export default async function (req: NowRequest, res: NowResponse) {
 
     try {
         const cookieJar = new CookieJar();
-        const response = await got(url, { cookieJar });
+        const response = await fetch(url);
 
         res.send(response.body);
         return;
