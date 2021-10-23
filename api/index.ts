@@ -27,7 +27,7 @@ export default async function (req: NowRequest, res: NowResponse) {
             }
           })
 
-        console.log("Got URL: " + url);
+        console.log("Got API URL: " + url);
         res.send(response.body);
         return;
     } catch (error) {
