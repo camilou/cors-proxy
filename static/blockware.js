@@ -14,7 +14,7 @@ const apiKey = "1zYBMPxqxbY1m4WSjxRDqytmID9",
 //CORS ANYWHERE SOLUTION
 (function () {
   var cors_api_host = "proxy-lime.vercel.app";
-  var cors_api_url = "https://" + cors_api_host + "/testing?url=";
+  var cors_api_url = "https://" + cors_api_host + "/api?url=";
   var slice = [].slice;
   var origin = window.location.protocol + "//" + window.location.host;
   var open = XMLHttpRequest.prototype.open;
