@@ -26,7 +26,7 @@ const apiKey = "1zYBMPxqxbY1m4WSjxRDqytmID9",
       targetOrigin[0].toLowerCase() !== origin &&
       targetOrigin[1] !== cors_api_host
     ) {
-      args[1] = cors_api_url + args[1];
+      args[1] = cors_api_url + encodeURIComponent(args[1]);
     }
     return open.apply(this, args);
   };
